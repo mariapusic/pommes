@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4w895vXqYIoXjJ59jctHNaJHApZKj01CRsYQOEhoBNbi/vOQAO+MWecNJin6xsQZ8C/T0mRAnVrpu68dv2He3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Maria Pusic\\source\\repos\\pommes\\pommes\\pommes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maria Pusic\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+  ],
+  "logs": []
+}
