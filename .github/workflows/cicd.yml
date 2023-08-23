@@ -3,6 +3,9 @@ name: CICD workflow
 on:
   workflow_dispatch
 
+env:
+  AZURE_WEB_APP: "webapp-pommes-tabort"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,3 +26,10 @@ jobs:
 
       - name: Publish project
         run: dotnet publish ./pommes/pommes.csproj --configuration Release --output ./publish
+
+      - name: Deploy to webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEB_APP }}
+          publish-profile: ${{ secrets.AZURE_KEY }}
+          package: ./publish
