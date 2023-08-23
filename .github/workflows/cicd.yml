@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/chechout@v1
       - name: Setup .net Core
-      - uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 7.0.x
 
